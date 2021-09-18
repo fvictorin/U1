@@ -17,12 +17,40 @@ nav {
     text-align: center
 }
 
-    nav ul {
+nav ul {
         list-style: none;
     }
 
+nav a {
+    text-decoration: none;
+    margin-bottom: 0.3rem;
+    display: inline-block;
+}
+
+nav a:link, nav a:visited {
+    background-color: rgb(228, 241, 170); 
+    color:crimson;
+}
+
+nav a:hover, nav a:active {
+    background-color: rgb(190, 214, 82); 
+    color:rgb(110, 0, 0);
+}
+
 #lista {
     background-color: rgb(255, 255, 255);
+}
+
+nav a.thispage {
+    background-color: rgb(105, 148, 66);
+}
+
+nav a.thispage::before {
+    content: "*   ";
+}
+
+nav a.thispage::after {
+    content: "   *";
 }
 
 h1 {
@@ -54,7 +82,7 @@ img {
 
 #cascade {
     background-image: url(../img/waterfall2.jpg);
-    height: 150px;
+    height: 100px;
     background-size: cover;
     font-size: 2rem;
     color: #ac1010;
